@@ -292,7 +292,7 @@ This structure allows bundlers to eliminate entire categories of checks if you d
 
 ## License
 
-ISC
+MIT
 
 ## Repository
 
