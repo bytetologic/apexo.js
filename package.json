@@ -1,0 +1,12 @@
+{
+  "name": "type-lex-monorepo",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "test": "npm test --workspaces",
+    "build": "npm run build --workspaces",
+    "release:all": "pnpm publish -r --access public"
+  }
+}

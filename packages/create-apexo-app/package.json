@@ -1,0 +1,46 @@
+{
+    "name": "create-apexo-app",
+    "version": "0.0.1",
+    "description": "Create Apexo apps with no build configuration",
+    "main": "dist/index.js",
+    "bin": {
+        "create-apexo-app": "./dist/index.js"
+    },
+    "scripts": {
+        "build": "tsup src/index.ts --format cjs --dts --minify",
+        "dev": "tsup src/index.ts --format cjs --watch",
+        "release": "pnpm publish --access public"
+    },
+    "files": [
+        "dist",
+        "templates"
+    ],
+    "keywords": [
+        "apexo",
+        "create-apexo-app",
+        "cli",
+        "scaffolding",
+        "boilerplate",
+        "validation",
+        "typescript"
+    ],
+    "author": "Lakshay Singh",
+    "license": "ISC",
+    "dependencies": {
+        "chalk": "^4.1.2",
+        "fs-extra": "^11.2.0",
+        "prompts": "^2.4.2",
+        "validate-npm-package-name": "^5.0.0"
+    },
+    "devDependencies": {
+        "@types/fs-extra": "^11.0.4",
+        "@types/prompts": "^2.4.9",
+        "@types/validate-npm-package-name": "^4.0.2",
+        "tsup": "^8.5.1",
+        "typescript": "^5.9.3"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/bytetologic/apexojs.git"
+    }
+}

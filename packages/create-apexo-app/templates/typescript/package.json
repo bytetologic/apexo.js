@@ -1,0 +1,27 @@
+{
+    "name": "my-apexo-app",
+    "version": "1.0.0",
+    "description": "A new Apexo TypeScript project",
+    "main": "dist/index.js",
+    "scripts": {
+        "build": "tsc",
+        "start": "node dist/index.js",
+        "dev": "tsc --watch",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+        "apexo",
+        "validation",
+        "typescript"
+    ],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "apexo": "^0.0.1",
+        "@apexo/type": "^0.0.2"
+    },
+    "devDependencies": {
+        "typescript": "^5.9.3",
+        "@types/node": "^22.0.0"
+    }
+}

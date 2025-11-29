@@ -1,0 +1,41 @@
+{
+    "name": "apexo",
+    "version": "0.0.1",
+    "description": "The umbrella package for ApexJS utilities.",
+    "main": "dist/index.js",
+    "module": "dist/index.mjs",
+    "sideEffects": false,
+    "types": "dist/index.d.ts",
+    "exports": {
+        ".": {
+            "import": "./dist/index.mjs",
+            "require": "./dist/index.js",
+            "types": "./dist/index.d.ts"
+        }
+    },
+    "scripts": {
+        "build": "tsup src/index.ts --format cjs,esm --dts --minify",
+        "test": "jest",
+        "release": "pnpm publish --access public"
+    },
+    "files": [
+        "dist"
+    ],
+    "keywords": [
+        "apexjs",
+        "utils",
+        "validation"
+    ],
+    "author": "ByteToLogic",
+    "license": "ISC",
+    "dependencies": {
+        "@apexo/type": "workspace:*"
+    },
+    "devDependencies": {
+        "tsup": "^8.0.0",
+        "typescript": "^5.0.0",
+        "@types/jest": "^29.5.0",
+        "jest": "^29.5.0",
+        "ts-jest": "^29.1.0"
+    }
+}

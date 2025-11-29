@@ -1,0 +1,20 @@
+{
+    "name": "my-apexo-app",
+    "version": "1.0.0",
+    "description": "A new Apexo project",
+    "main": "index.js",
+    "scripts": {
+        "start": "node index.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+        "apexo",
+        "validation"
+    ],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "apexo": "^0.0.1",
+        "@apexo/type": "^0.0.2"
+    }
+}
