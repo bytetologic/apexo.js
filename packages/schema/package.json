@@ -1,0 +1,31 @@
+{
+  "name": "@apexo/schema",
+  "version": "0.0.1",
+  "description": "@apexo/schema is zero-dependency schema validation library that compiles schemas at build time for fast and reliable runtime validation in JavaScript and TypeScript.",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts --minify --clean",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@apexo/type": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.1",
+    "joi": "^18.0.2",
+    "tsup": "^8.5.1",
+    "typescript": "^5.9.3",
+    "zod": "^4.3.5"
+  },
+  "author": "",
+  "license": "MIT"
+}
